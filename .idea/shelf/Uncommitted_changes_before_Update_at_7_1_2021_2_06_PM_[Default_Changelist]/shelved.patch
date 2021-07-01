@@ -1,0 +1,43 @@
+Index: app/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>/build\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/.gitignore	(revision 35a66ff4f771968e7cb6b84ab466aeb8086b6391)
++++ app/.gitignore	(date 1625127072291)
+@@ -1,1 +1,2 @@
+ /build
++//
+Index: app/proguard-rules.pro
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># Add project specific ProGuard rules here.\r\n# You can control the set of applied configuration files using the\r\n# proguardFiles setting in build.gradle.\r\n#\r\n# For more details, see\r\n#   http://developer.android.com/guide/developing/tools/proguard.html\r\n\r\n# If your project uses WebView with JS, uncomment the following\r\n# and specify the fully qualified class name to the JavaScript interface\r\n# class:\r\n#-keepclassmembers class fqcn.of.javascript.interface.for.webview {\r\n#   public *;\r\n#}\r\n\r\n# Uncomment this to preserve the line number information for\r\n# debugging stack traces.\r\n#-keepattributes SourceFile,LineNumberTable\r\n\r\n# If you keep the line number information, uncomment this to\r\n# hide the original source file name.\r\n#-renamesourcefileattribute SourceFile\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/proguard-rules.pro	(revision 35a66ff4f771968e7cb6b84ab466aeb8086b6391)
++++ app/proguard-rules.pro	(date 1625127179190)
+@@ -1,21 +1,0 @@
+-# Add project specific ProGuard rules here.
+-# You can control the set of applied configuration files using the
+-# proguardFiles setting in build.gradle.
+-#
+-# For more details, see
+-#   http://developer.android.com/guide/developing/tools/proguard.html
+-
+-# If your project uses WebView with JS, uncomment the following
+-# and specify the fully qualified class name to the JavaScript interface
+-# class:
+-#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+-#   public *;
+-#}
+-
+-# Uncomment this to preserve the line number information for
+-# debugging stack traces.
+-#-keepattributes SourceFile,LineNumberTable
+-
+-# If you keep the line number information, uncomment this to
+-# hide the original source file name.
+-#-renamesourcefileattribute SourceFile
