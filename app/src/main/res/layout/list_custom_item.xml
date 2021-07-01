@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--list custom item page -->
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -20,7 +21,9 @@
         android:text="Country Name"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:paddingLeft="15dp"/>
+        android:paddingLeft="15dp"
+        android:textColor="@color/black"
+        />
 
 
 </LinearLayout>

@@ -1,4 +1,4 @@
-package com.developer.arsltech.covid_19tracker;
+package com.developer.josh.covid_19tracker;
 
 import android.content.Context;
 import android.view.LayoutInflater;

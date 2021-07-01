@@ -1,4 +1,4 @@
-package com.developer.arsltech.covid_19tracker;
+package com.developer.josh.covid_19tracker;
 
 import org.junit.Test;
 

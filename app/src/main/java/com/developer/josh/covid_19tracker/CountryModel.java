@@ -1,4 +1,4 @@
-package com.developer.arsltech.covid_19tracker;
+package com.developer.josh.covid_19tracker;
 
 public class CountryModel {
     private String flag,country,cases,todayCases,deaths,todayDeaths,recovered,active,critical;

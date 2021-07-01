@@ -1,10 +1,12 @@
-package com.developer.arsltech.covid_19tracker;
+package com.developer.josh.covid_19tracker;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ScrollView;
 import android.widget.TextView;
@@ -16,6 +18,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.leo.simplearcloader.SimpleArcLoader;
 
 import org.eazegraph.lib.charts.PieChart;
@@ -34,6 +37,33 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
+        bottomNavigationView.setSelectedItemId(R.id.home);
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                switch (menuItem.getItemId()){
+                    case R.id.graphs:
+                        startActivity(new Intent(getApplicationContext(), Countrygraphs.class));
+                        overridePendingTransition(0,0);
+                        return true;
+
+                    case R.id.symptoms:
+                        startActivity(new Intent(getApplicationContext(), Symptoms.class));
+                        overridePendingTransition(0,0);
+                        return true;
+                    case R.id.Precautions:
+                        startActivity(new Intent(getApplicationContext(), Precautions.class));
+                        overridePendingTransition(0,0);
+                        return true;
+                    case R.id.home:
+
+                        return true;
+                }
+                return false;
+            }
+        });
 
         tvCases = findViewById(R.id.tvCases);
         tvRecovered = findViewById(R.id.tvRecovered);
